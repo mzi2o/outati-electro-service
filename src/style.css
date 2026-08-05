@@ -64,7 +64,47 @@ body.rtl .translate-middle {
 body.rtl .hero-image-col {
   order: -1;
 }
+#main-nav {
+  min-height: 90px;
+  padding: 12px 0;
+}
 
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  margin-right: 35px;
+  padding: 0;
+}
+
+.navbar-logo {
+  width: 82px;
+  height: 72px;
+  object-fit: contain;
+  background: transparent;
+  border-radius: 8px;
+  display: block;
+}
+
+.navbar-nav {
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-link {
+  padding: 10px 12px !important;
+  white-space: nowrap;
+}
+
+@media (max-width: 991px) {
+  .navbar-logo {
+    width: 68px;
+    height: 60px;
+  }
+
+  #main-nav {
+    min-height: 76px;
+  }
+}
 /* Typography Overrides */
 .text-primary-dark {
   color: var(--primary-dark) !important;
