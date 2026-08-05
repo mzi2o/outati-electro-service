@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <title>OuTaTi Electro Service</title>
+  <meta name="description" content="OuTaTi Electro Service - Electronics and security technician in Tangier" />
+  
+  <!-- CSS Libraries -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="main-nav">
+    <div class="container">
+      <a class="navbar-brand d-flex flex-column align-items-start" href="#">
+        <span class="logo-main fw-bold">OuTaTi</span>
+        <span class="logo-sub">Electro Service</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#hero" data-en="Home" data-ar="الرئيسية">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about" data-en="About Othman" data-ar="عن عثمان">About Othman</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services" data-en="Services" data-ar="الخدمات">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience" data-en="Experience" data-ar="الخبرة">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery" data-en="Previous Work" data-ar="أعمالنا">Previous Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+          <button id="lang-toggle" class="btn btn-outline-primary btn-sm rounded-pill px-3 fw-semibold">عربي</button>
+          <a href="https://wa.me/212697362785" target="_blank" class="btn btn-success rounded-pill px-3 d-flex align-items-center gap-2">
+            <i class="fab fa-whatsapp"></i> <span data-en="WhatsApp" data-ar="واتساب">WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero d-flex align-items-center position-relative overflow-hidden">
+    <!-- Decorative background elements -->
+    <div class="hero-bg-shapes"></div>
+    
+    <div class="container position-relative z-1">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 hero-text-col reveal">
+          <div class="badge bg-white bg-opacity-10 text-white rounded-pill px-3 py-2 mb-4 d-inline-block border border-white border-opacity-25" 
+               data-en="Serving Tangier since 2017" 
+               data-ar="نخدم زبناء مدينة طنجة منذ سنة 2017">
+            Serving Tangier since 2017
+          </div>
+          <h1 class="display-4 fw-bold text-white mb-4" 
+              data-en="Your Trusted Electronics and Security Technician in Tangier" 
+              data-ar="تقني موثوق للإلكترونيات وأنظمة الحماية بمدينة طنجة">
+            Your Trusted Electronics and Security Technician in Tangier
+          </h1>
+          <p class="lead text-white text-opacity-75 mb-5" 
+             data-en="Since 2017, Othman has been helping individuals, shops and businesses install security systems and repair their electronic devices. From your first WhatsApp message to the completion of the service, you communicate directly with the technician handling your request." 
+             data-ar="منذ سنة 2017، يساعد عثمان الأفراد والمحلات والشركات في تركيب أنظمة الحماية وإصلاح الأجهزة الإلكترونية. من أول رسالة عبر واتساب إلى إتمام الخدمة، ستتواصل مباشرة مع التقني المسؤول عن طلبك.">
+            Since 2017, Othman has been helping individuals, shops and businesses install security systems and repair their electronic devices. From your first WhatsApp message to the completion of the service, you communicate directly with the technician handling your request.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#services" class="btn btn-danger btn-lg rounded-pill px-4" 
+               data-en="Choose a Service" 
+               data-ar="اختر خدمة">Choose a Service</a>
+            <a href="https://wa.me/212697362785" target="_blank" class="btn btn-outline-light btn-lg rounded-pill px-4 d-flex align-items-center gap-2">
+              <i class="fab fa-whatsapp"></i> <span data-en="Talk to Othman" data-ar="تواصل مع عثمان">Talk to Othman</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 position-relative text-center hero-image-col reveal">
+          <div class="hero-image-wrapper mx-auto position-relative">
+            <div class="hero-image-glow"></div>
+            <img src="/images/othman.jpg" alt="Othman - Technician" class="img-fluid rounded-4 shadow-lg position-relative hero-img" />
+            <div class="position-absolute top-0 start-50 translate-middle badge bg-danger text-white rounded-pill px-4 py-2 shadow border border-white"
+                 data-en="Technician since 2017" data-ar="تقني منذ سنة 2017">
+              Technician since 2017
+            </div>
+            
+            <!-- Floating Icons -->
+            <i class="fas fa-camera float-icon float-icon-1"></i>
+            <i class="fas fa-wifi float-icon float-icon-2"></i>
+            <i class="fas fa-mobile-alt float-icon float-icon-3"></i>
+            <i class="fas fa-shield-alt float-icon float-icon-4"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Othman Section -->
+  <section id="about" class="py-5 bg-white">
+    <div class="container py-5">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5 reveal">
+          <div class="about-image-wrapper position-relative">
+            <img src="/images/othman.jpg" alt="Othman" class="img-fluid rounded-4 shadow-sm w-100 object-fit-cover about-img" />
+            <div class="about-dots"></div>
+          </div>
+        </div>
+        <div class="col-lg-7 reveal">
+          <h2 class="fw-bold mb-4 text-primary-dark" data-en="Meet Othman" data-ar="تعرف على عثمان">Meet Othman</h2>
+          <div class="title-underline mb-4"></div>
+          <p class="fs-5 text-secondary mb-5 lh-lg" 
+             data-en="Othman is the founder and technician behind OuTaTi Electro Service. He personally communicates with customers, studies their needs and recommends a suitable technical solution. With experience dating back to 2017, his work covers surveillance systems, electronic-device repair, networks, Wi-Fi, alarms and access-control solutions." 
+             data-ar="عثمان هو مؤسس وتقني OuTaTi Electro Service. يتواصل شخصياً مع الزبناء، ويدرس احتياجاتهم، ويقترح الحل التقني المناسب لكل طلب. بخبرة منذ سنة 2017، تشمل خدماته أنظمة المراقبة، وإصلاح الأجهزة الإلكترونية، والشبكات، والواي فاي، والإنذار والتحكم في الدخول.">
+            Othman is the founder and technician behind OuTaTi Electro Service. He personally communicates with customers, studies their needs and recommends a suitable technical solution. With experience dating back to 2017, his work covers surveillance systems, electronic-device repair, networks, Wi-Fi, alarms and access-control solutions.
+          </p>
+          
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="d-flex align-items-center p-3 border rounded-3 bg-light hover-lift">
+                <div class="icon-box text-primary me-3 ms-3">
+                  <i class="far fa-calendar-alt fs-4"></i>
+                </div>
+                <div class="fw-semibold" data-en="Founded in 2017" data-ar="تأسس سنة 2017">Founded in 2017</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-center p-3 border rounded-3 bg-light hover-lift">
+                <div class="icon-box text-primary me-3 ms-3">
+                  <i class="far fa-comments fs-4"></i>
+                </div>
+                <div class="fw-semibold" data-en="Direct Communication" data-ar="تواصل مباشر">Direct Communication</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-center p-3 border rounded-3 bg-light hover-lift">
+                <div class="icon-box text-primary me-3 ms-3">
+                  <i class="fas fa-map-marker-alt fs-4"></i>
+                </div>
+                <div class="fw-semibold" data-en="Service in Tangier" data-ar="الخدمة بمدينة طنجة">Service in Tangier</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-center p-3 border rounded-3 bg-light hover-lift">
+                <div class="icon-box text-primary me-3 ms-3">
+                  <i class="fas fa-tools fs-4"></i>
+                </div>
+                <div class="fw-semibold" data-en="Technical Support" data-ar="دعم تقني">Technical Support</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-5 bg-light">
+    <div class="container py-5">
+      <div class="text-center mb-5 reveal">
+        <h2 class="fw-bold text-primary-dark" data-en="Our Services" data-ar="خدماتنا">Our Services</h2>
+        <div class="title-underline mx-auto mt-3"></div>
+      </div>
+      
+      <div class="row g-4">
+        <!-- Service 1 -->
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="card h-100 border-0 shadow-sm service-card p-4 rounded-4">
+            <div class="service-icon mb-4 text-primary">
+              <i class="fas fa-video"></i>
+            </div>
+            <h4 class="fw-bold mb-3" data-en="Camera Installation" data-ar="تركيب كاميرات المراقبة">Camera Installation</h4>
+            <p class="text-secondary mb-4 flex-grow-1" data-en="Installation and configuration of indoor, outdoor, wired, wireless and solar-powered cameras." data-ar="تركيب وضبط كاميرات المراقبة الداخلية والخارجية والسلكية واللاسلكية والتي تعمل بالطاقة الشمسية.">
+              Installation and configuration of indoor, outdoor, wired, wireless and solar-powered cameras.
+            </p>
+            <button class="btn btn-outline-danger btn-sm rounded-pill mt-auto fw-semibold service-btn" data-service="camera" data-en="Ask About This Service" data-ar="استفسر عن هذه الخدمة">Ask About This Service</button>
+          </div>
+        </div>
+        
+        <!-- Service 2 -->
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="card h-100 border-0 shadow-sm service-card p-4 rounded-4">
+            <div class="service-icon mb-4 text-primary">
+              <i class="fas fa-wrench"></i>
+            </div>
+            <h4 class="fw-bold mb-3" data-en="CCTV Maintenance" data-ar="صيانة وإصلاح أنظمة المراقبة">CCTV Maintenance</h4>
+            <p class="text-secondary mb-4 flex-grow-1" data-en="Troubleshooting cameras, DVR and NVR recorders, cables, storage and remote viewing." data-ar="تشخيص وإصلاح الكاميرات وأجهزة التسجيل والأسلاك والتخزين والمشاهدة عن بعد.">
+              Troubleshooting cameras, DVR and NVR recorders, cables, storage and remote viewing.
+            </p>
+            <button class="btn btn-outline-danger btn-sm rounded-pill mt-auto fw-semibold service-btn" data-service="maintenance" data-en="Ask About This Service" data-ar="استفسر عن هذه الخدمة">Ask About This Service</button>
+          </div>
+        </div>
+        
+        <!-- Service 3 -->
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="card h-100 border-0 shadow-sm service-card p-4 rounded-4">
+            <div class="service-icon mb-4 text-primary">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h4 class="fw-bold mb-3" data-en="Phone Repair" data-ar="إصلاح الهواتف">Phone Repair</h4>
+            <p class="text-secondary mb-4 flex-grow-1" data-en="Repairing screens, batteries, charging ports, software issues and other smartphone faults." data-ar="إصلاح الشاشات والبطاريات ومنافذ الشحن ومشاكل النظام وأعطال الهواتف.">
+              Repairing screens, batteries, charging ports, software issues and other smartphone faults.
+            </p>
+            <button class="btn btn-outline-danger btn-sm rounded-pill mt-auto fw-semibold service-btn" data-service="phone" data-en="Ask About This Service" data-ar="استفسر عن هذه الخدمة">Ask About This Service</button>
+          </div>
+        </div>
+        
+        <!-- Service 4 -->
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="card h-100 border-0 shadow-sm service-card p-4 rounded-4">
+            <div class="service-icon mb-4 text-primary">
+              <i class="fas fa-laptop"></i>
+            </div>
+            <h4 class="fw-bold mb-3" data-en="Computer Repair" data-ar="إصلاح الحواسيب">Computer Repair</h4>
+            <p class="text-secondary mb-4 flex-grow-1" data-en="Computer diagnosis, maintenance, system installation, hardware upgrades and cleaning." data-ar="تشخيص وصيانة الحواسيب وتثبيت الأنظمة وتحديث المكونات وتنظيف الجهاز.">
+              Computer diagnosis, maintenance, system installation, hardware upgrades and cleaning.
+            </p>
+            <button class="btn btn-outline-danger btn-sm rounded-pill mt-auto fw-semibold service-btn" data-service="computer" data-en="Ask About This Service" data-ar="استفسر عن هذه الخدمة">Ask About This Service</button>
+          </div>
+        </div>
+        
+        <!-- Service 5 -->
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="card h-100 border-0 shadow-sm service-card p-4 rounded-4">
+            <div class="service-icon mb-4 text-primary">
+              <i class="fas fa-wifi"></i>
+            </div>
+            <h4 class="fw-bold mb-3" data-en="Network & Wi-Fi" data-ar="تركيب الشبكات والواي فاي">Network & Wi-Fi</h4>
+            <p class="text-secondary mb-4 flex-grow-1" data-en="Installation and configuration of home, shop and business networks." data-ar="تركيب وإعداد شبكات الإنترنت والواي فاي للمنازل والمحلات والشركات.">
+              Installation and configuration of home, shop and business networks.
+            </p>
+            <button class="btn btn-outline-danger btn-sm rounded-pill mt-auto fw-semibold service-btn" data-service="network" data-en="Ask About This Service" data-ar="استفسر عن هذه الخدمة">Ask About This Service</button>
+          </div>
+        </div>
+        
+        <!-- Service 6 -->
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="card h-100 border-0 shadow-sm service-card p-4 rounded-4">
+            <div class="service-icon mb-4 text-primary">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h4 class="fw-bold mb-3" data-en="Alarms & Access Control" data-ar="أنظمة الإنذار والتحكم في الدخول">Alarms & Access Control</h4>
+            <p class="text-secondary mb-4 flex-grow-1" data-en="Installation of alarms, smart locks, intercom systems and access-control devices." data-ar="تركيب أجهزة الإنذار والأقفال الذكية والإنترفون وأنظمة التحكم في الدخول.">
+              Installation of alarms, smart locks, intercom systems and access-control devices.
+            </p>
+            <button class="btn btn-outline-danger btn-sm rounded-pill mt-auto fw-semibold service-btn" data-service="alarms" data-en="Ask About This Service" data-ar="استفسر عن هذه الخدمة">Ask About This Service</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solar Camera Feature Section -->
+  <section class="solar-feature text-white py-5 position-relative overflow-hidden">
+    <div class="solar-bg-pattern"></div>
+    <div class="container py-5 position-relative z-1">
+      <div class="row align-items-center">
+        <div class="col-lg-8 mx-auto text-center reveal">
+          <div class="mb-4 d-inline-flex align-items-center justify-content-center bg-danger rounded-circle p-3 shadow-lg" style="width: 80px; height: 80px;">
+            <i class="fas fa-solar-panel fs-2"></i>
+          </div>
+          <h2 class="display-6 fw-bold mb-4" data-en="Solar Security Cameras Without Cables or Electricity Costs" data-ar="كاميرات بالطاقة الشمسية بدون أسلاك وبدون مصاريف الكهرباء">
+            Solar Security Cameras Without Cables or Electricity Costs
+          </h2>
+          <p class="lead mb-5 text-white-50" data-en="Security cameras with powerful LED lighting, solar charging and SIM-card support. Monitor your property remotely from your smartphone without electrical wiring." data-ar="كاميرات مراقبة مزودة بمصباح ليد كبير، تعمل بالطاقة الشمسية ولا تحتاج إلى أسلاك كهربائية. تدعم بطاقة SIM لجميع شركات الاتصالات، ويمكن مراقبتها عن بعد من الهاتف.">
+            Security cameras with powerful LED lighting, solar charging and SIM-card support. Monitor your property remotely from your smartphone without electrical wiring.
+          </p>
+          
+          <div class="d-flex flex-wrap justify-content-center gap-3 mb-5">
+            <span class="badge bg-white text-primary-dark rounded-pill py-2 px-3 fs-6 d-flex align-items-center gap-2 border border-white border-opacity-10"><i class="fas fa-check-circle text-danger"></i> <span data-en="Solar powered" data-ar="يعمل بالطاقة الشمسية">Solar powered</span></span>
+            <span class="badge bg-white text-primary-dark rounded-pill py-2 px-3 fs-6 d-flex align-items-center gap-2 border border-white border-opacity-10"><i class="fas fa-check-circle text-danger"></i> <span data-en="Large LED light" data-ar="مصباح LED كبير">Large LED light</span></span>
+            <span class="badge bg-white text-primary-dark rounded-pill py-2 px-3 fs-6 d-flex align-items-center gap-2 border border-white border-opacity-10"><i class="fas fa-check-circle text-danger"></i> <span data-en="SIM-card support" data-ar="يدعم بطاقة SIM">SIM-card support</span></span>
+            <span class="badge bg-white text-primary-dark rounded-pill py-2 px-3 fs-6 d-flex align-items-center gap-2 border border-white border-opacity-10"><i class="fas fa-check-circle text-danger"></i> <span data-en="Remote monitoring" data-ar="مراقبة عن بعد">Remote monitoring</span></span>
+            <span class="badge bg-white text-primary-dark rounded-pill py-2 px-3 fs-6 d-flex align-items-center gap-2 border border-white border-opacity-10"><i class="fas fa-check-circle text-danger"></i> <span data-en="No electrical wiring" data-ar="بدون أسلاك كهربائية">No electrical wiring</span></span>
+            <span class="badge bg-white text-primary-dark rounded-pill py-2 px-3 fs-6 d-flex align-items-center gap-2 border border-white border-opacity-10"><i class="fas fa-check-circle text-danger"></i> <span data-en="Suitable for shops, homes and farms" data-ar="مناسب للمحلات والمنازل والمزارع">Suitable for shops, homes and farms</span></span>
+          </div>
+          
+          <button class="btn btn-success btn-lg rounded-pill px-5 d-inline-flex align-items-center gap-2 shadow-lg hover-lift service-btn" data-service="solar">
+            <i class="fab fa-whatsapp fs-4"></i> <span data-en="Ask Othman About Solar Cameras" data-ar="اسأل عثمان عن كاميرات الطاقة الشمسية">Ask Othman About Solar Cameras</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Timeline Section -->
+  <section id="experience" class="py-5 bg-white">
+    <div class="container py-5">
+      <div class="text-center mb-5 reveal">
+        <h2 class="fw-bold text-primary-dark" data-en="Our Experience" data-ar="خبرتنا">Our Experience</h2>
+        <div class="title-underline mx-auto mt-3"></div>
+      </div>
+      
+      <div class="timeline-container mx-auto position-relative reveal">
+        <div class="timeline-line"></div>
+        
+        <div class="row g-4 position-relative">
+          <div class="col-md-4 timeline-item text-center px-4">
+            <div class="timeline-dot mb-4 shadow">1</div>
+            <h5 class="fw-bold text-primary-dark mb-2">2017</h5>
+            <h6 class="fw-semibold text-danger mb-3" data-en="OuTaTi Electro Service begins" data-ar="بداية OuTaTi Electro Service">OuTaTi Electro Service begins</h6>
+            <p class="text-secondary small" data-en="Othman starts providing electronics repair and technical assistance in Tangier." data-ar="بدأ عثمان في تقديم خدمات إصلاح الأجهزة والمساعدة التقنية بمدينة طنجة.">
+              Othman starts providing electronics repair and technical assistance in Tangier.
+            </p>
+          </div>
+          
+          <div class="col-md-4 timeline-item text-center px-4">
+            <div class="timeline-dot mb-4 shadow">2</div>
+            <h5 class="fw-bold text-primary-dark mb-2" data-en="Development" data-ar="مرحلة التطور">Development</h5>
+            <h6 class="fw-semibold text-danger mb-3" data-en="Expansion of services" data-ar="توسيع الخدمات">Expansion of services</h6>
+            <p class="text-secondary small" data-en="The business expands into surveillance cameras, networks, Wi-Fi and security systems." data-ar="توسعت الخدمات لتشمل كاميرات المراقبة والشبكات والواي فاي وأنظمة الحماية.">
+              The business expands into surveillance cameras, networks, Wi-Fi and security systems.
+            </p>
+          </div>
+          
+          <div class="col-md-4 timeline-item text-center px-4">
+            <div class="timeline-dot mb-4 shadow">3</div>
+            <h5 class="fw-bold text-primary-dark mb-2" data-en="Today" data-ar="اليوم">Today</h5>
+            <h6 class="fw-semibold text-danger mb-3" data-en="Direct and complete technical service" data-ar="خدمة تقنية مباشرة ومتكاملة">Direct and complete technical service</h6>
+            <p class="text-secondary small" data-en="Customers can discuss their needs directly with Othman and receive a suitable solution." data-ar="يمكن للزبون التواصل مباشرة مع عثمان وشرح احتياجاته للحصول على الحل المناسب.">
+              Customers can discuss their needs directly with Othman and receive a suitable solution.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="py-5 bg-light">
+    <div class="container py-5">
+      <div class="text-center mb-5 reveal">
+        <h2 class="fw-bold text-primary-dark" data-en="How It Works" data-ar="كيف يعمل">How It Works</h2>
+        <div class="title-underline mx-auto mt-3"></div>
+      </div>
+      
+      <div class="row text-center g-4 reveal">
+        <div class="col-sm-6 col-lg-3 step-card position-relative">
+          <div class="step-circle bg-white text-primary-dark shadow-sm mx-auto mb-3 d-flex align-items-center justify-content-center fw-bold fs-4">1</div>
+          <div class="fw-semibold" data-en="Select your service" data-ar="اختر الخدمة">Select your service</div>
+          <div class="step-arrow d-none d-lg-block"><i class="fas fa-chevron-right text-muted opacity-50"></i></div>
+        </div>
+        <div class="col-sm-6 col-lg-3 step-card position-relative">
+          <div class="step-circle bg-white text-primary-dark shadow-sm mx-auto mb-3 d-flex align-items-center justify-content-center fw-bold fs-4">2</div>
+          <div class="fw-semibold" data-en="Describe your request" data-ar="اشرح طلبك">Describe your request</div>
+          <div class="step-arrow d-none d-lg-block"><i class="fas fa-chevron-right text-muted opacity-50"></i></div>
+        </div>
+        <div class="col-sm-6 col-lg-3 step-card position-relative">
+          <div class="step-circle bg-white text-primary-dark shadow-sm mx-auto mb-3 d-flex align-items-center justify-content-center fw-bold fs-4">3</div>
+          <div class="fw-semibold" data-en="Talk directly with Othman" data-ar="تواصل مباشرة مع عثمان">Talk directly with Othman</div>
+          <div class="step-arrow d-none d-lg-block"><i class="fas fa-chevron-right text-muted opacity-50"></i></div>
+        </div>
+        <div class="col-sm-6 col-lg-3 step-card position-relative">
+          <div class="step-circle bg-white text-primary-dark shadow-sm mx-auto mb-3 d-flex align-items-center justify-content-center fw-bold fs-4">4</div>
+          <div class="fw-semibold" data-en="Receive the technical service" data-ar="استفد من الخدمة التقنية">Receive the technical service</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Request Form Section -->
+  <section id="request-form" class="py-5 bg-white">
+    <div class="container py-5">
+      <div class="row justify-content-center reveal">
+        <div class="col-lg-8">
+          <div class="text-center mb-5">
+            <h2 class="fw-bold text-primary-dark" data-en="Request a Service" data-ar="اطلب خدمة">Request a Service</h2>
+            <div class="title-underline mx-auto mt-3 mb-4"></div>
+            <p class="text-secondary" data-en="Fill in the form and Othman will contact you directly via WhatsApp" data-ar="أكمل النموذج وسيتواصل معك عثمان مباشرة عبر واتساب">
+              Fill in the form and Othman will contact you directly via WhatsApp
+            </p>
+          </div>
+          
+          <div class="card border-0 shadow-lg rounded-4 p-4 p-md-5 bg-light">
+            <form id="whatsapp-form">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold" data-en="Full Name" data-ar="الاسم الكامل">Full Name</label>
+                  <input type="text" class="form-control form-control-lg bg-white border-0 shadow-sm" id="form-name" required data-placeholder-en="Your name" data-placeholder-ar="اسمك الكامل" placeholder="Your name">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold" data-en="Phone Number" data-ar="رقم الهاتف">Phone Number</label>
+                  <input type="tel" class="form-control form-control-lg bg-white border-0 shadow-sm" id="form-phone" required data-placeholder-en="06..." data-placeholder-ar="...06" placeholder="06..." style="direction: ltr; text-align: left;">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold" data-en="Location / Neighbourhood" data-ar="الحي أو المنطقة">Location / Neighbourhood</label>
+                  <input type="text" class="form-control form-control-lg bg-white border-0 shadow-sm" id="form-location" required data-placeholder-en="E.g. Bendiban" data-placeholder-ar="مثال: بنديبان" placeholder="E.g. Bendiban">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold" data-en="Service" data-ar="الخدمة">Service</label>
+                  <select class="form-select form-select-lg bg-white border-0 shadow-sm" id="form-service" required>
+                    <option value="" disabled selected data-en="Select a service" data-ar="اختر خدمة">Select a service</option>
+                    <option value="camera" data-en="Camera Installation" data-ar="تركيب كاميرات">Camera Installation</option>
+                    <option value="maintenance" data-en="CCTV Maintenance" data-ar="صيانة المراقبة">CCTV Maintenance</option>
+                    <option value="phone" data-en="Phone Repair" data-ar="إصلاح الهاتف">Phone Repair</option>
+                    <option value="computer" data-en="Computer Repair" data-ar="إصلاح الحاسوب">Computer Repair</option>
+                    <option value="network" data-en="Network & Wi-Fi" data-ar="الشبكات والواي فاي">Network & Wi-Fi</option>
+                    <option value="alarms" data-en="Alarms & Access Control" data-ar="الإنذار والتحكم في الدخول">Alarms & Access Control</option>
+                    <option value="solar" data-en="Solar Camera" data-ar="كاميرات شمسية">Solar Camera</option>
+                    <option value="other" data-en="Other" data-ar="أخرى">Other</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label class="form-label fw-semibold" data-en="Problem Description" data-ar="تفاصيل الطلب">Problem Description</label>
+                  <textarea class="form-control form-control-lg bg-white border-0 shadow-sm" id="form-desc" rows="4" required data-placeholder-en="Briefly describe what you need..." data-placeholder-ar="اشرح طلبك باختصار..." placeholder="Briefly describe what you need..."></textarea>
+                </div>
+                <div class="col-12 mt-5 text-center">
+                  <button type="submit" class="btn btn-danger btn-lg rounded-pill px-5 d-inline-flex align-items-center gap-2 hover-lift w-100 justify-content-center" style="max-width: 350px;">
+                    <i class="fab fa-whatsapp fs-4"></i> <span data-en="Send via WhatsApp" data-ar="إرسال عبر واتساب">Send via WhatsApp</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Previous Work Gallery Section -->
+  <section id="gallery" class="py-5 bg-light">
+    <div class="container py-5">
+      <div class="text-center mb-5 reveal">
+        <h2 class="fw-bold text-primary-dark" data-en="Previous Work" data-ar="أعمالنا">Previous Work</h2>
+        <div class="title-underline mx-auto mt-3 mb-4"></div>
+        
+        <!-- Filter Buttons -->
+        <div class="d-flex flex-wrap justify-content-center gap-2 mt-4" id="gallery-filters">
+          <button class="btn btn-primary rounded-pill px-3 py-1 active" data-filter="all" data-en="All" data-ar="الكل">All</button>
+          <button class="btn btn-outline-primary rounded-pill px-3 py-1 bg-white" data-filter="cameras" data-en="Cameras" data-ar="كاميرات">Cameras</button>
+          <button class="btn btn-outline-primary rounded-pill px-3 py-1 bg-white" data-filter="solar" data-en="Solar" data-ar="طاقة شمسية">Solar</button>
+          <button class="btn btn-outline-primary rounded-pill px-3 py-1 bg-white" data-filter="phones" data-en="Phones" data-ar="هواتف">Phones</button>
+          <button class="btn btn-outline-primary rounded-pill px-3 py-1 bg-white" data-filter="computers" data-en="Computers" data-ar="حواسيب">Computers</button>
+          <button class="btn btn-outline-primary rounded-pill px-3 py-1 bg-white" data-filter="networks" data-en="Networks" data-ar="شبكات">Networks</button>
+          <button class="btn btn-outline-primary rounded-pill px-3 py-1 bg-white" data-filter="alarms" data-en="Alarms" data-ar="إنذار">Alarms</button>
+        </div>
+      </div>
+      
+      <div class="row g-4 reveal" id="gallery-grid">
+        <!-- Generative placeholder cards -->
+        <div class="col-sm-6 col-lg-4 gallery-item" data-category="cameras">
+          <div class="gallery-card rounded-4 overflow-hidden position-relative shadow-sm aspect-ratio-4-3 gradient-bg-1 d-flex flex-column align-items-center justify-content-center text-white">
+            <i class="fas fa-video fs-1 mb-3 opacity-50"></i>
+            <span class="badge bg-white text-dark mb-2 position-absolute top-0 start-0 m-3" data-en="Cameras" data-ar="كاميرات">Cameras</span>
+            <div class="fw-medium opacity-75" data-en="Photo coming soon" data-ar="الصورة قادمة قريباً">Photo coming soon</div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-lg-4 gallery-item" data-category="solar">
+          <div class="gallery-card rounded-4 overflow-hidden position-relative shadow-sm aspect-ratio-4-3 gradient-bg-2 d-flex flex-column align-items-center justify-content-center text-white">
+            <i class="fas fa-solar-panel fs-1 mb-3 opacity-50"></i>
+            <span class="badge bg-white text-dark mb-2 position-absolute top-0 start-0 m-3" data-en="Solar" data-ar="طاقة شمسية">Solar</span>
+            <div class="fw-medium opacity-75" data-en="Photo coming soon" data-ar="الصورة قادمة قريباً">Photo coming soon</div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-lg-4 gallery-item" data-category="phones">
+          <div class="gallery-card rounded-4 overflow-hidden position-relative shadow-sm aspect-ratio-4-3 gradient-bg-3 d-flex flex-column align-items-center justify-content-center text-white">
+            <i class="fas fa-mobile-alt fs-1 mb-3 opacity-50"></i>
+            <span class="badge bg-white text-dark mb-2 position-absolute top-0 start-0 m-3" data-en="Phones" data-ar="هواتف">Phones</span>
+            <div class="fw-medium opacity-75" data-en="Photo coming soon" data-ar="الصورة قادمة قريباً">Photo coming soon</div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-lg-4 gallery-item" data-category="networks">
+          <div class="gallery-card rounded-4 overflow-hidden position-relative shadow-sm aspect-ratio-4-3 gradient-bg-4 d-flex flex-column align-items-center justify-content-center text-white">
+            <i class="fas fa-network-wired fs-1 mb-3 opacity-50"></i>
+            <span class="badge bg-white text-dark mb-2 position-absolute top-0 start-0 m-3" data-en="Networks" data-ar="شبكات">Networks</span>
+            <div class="fw-medium opacity-75" data-en="Photo coming soon" data-ar="الصورة قادمة قريباً">Photo coming soon</div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-lg-4 gallery-item" data-category="alarms">
+          <div class="gallery-card rounded-4 overflow-hidden position-relative shadow-sm aspect-ratio-4-3 gradient-bg-5 d-flex flex-column align-items-center justify-content-center text-white">
+            <i class="fas fa-shield-alt fs-1 mb-3 opacity-50"></i>
+            <span class="badge bg-white text-dark mb-2 position-absolute top-0 start-0 m-3" data-en="Alarms" data-ar="إنذار">Alarms</span>
+            <div class="fw-medium opacity-75" data-en="Photo coming soon" data-ar="الصورة قادمة قريباً">Photo coming soon</div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-lg-4 gallery-item" data-category="computers">
+          <div class="gallery-card rounded-4 overflow-hidden position-relative shadow-sm aspect-ratio-4-3 gradient-bg-6 d-flex flex-column align-items-center justify-content-center text-white">
+            <i class="fas fa-laptop fs-1 mb-3 opacity-50"></i>
+            <span class="badge bg-white text-dark mb-2 position-absolute top-0 start-0 m-3" data-en="Computers" data-ar="حواسيب">Computers</span>
+            <div class="fw-medium opacity-75" data-en="Photo coming soon" data-ar="الصورة قادمة قريباً">Photo coming soon</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Othman Section -->
+  <section class="py-5 bg-white">
+    <div class="container py-5">
+      <div class="text-center mb-5 reveal">
+        <h2 class="fw-bold text-primary-dark" data-en="Why Work with Othman" data-ar="لماذا تختار عثمان">Why Work with Othman</h2>
+        <div class="title-underline mx-auto mt-3"></div>
+      </div>
+      
+      <div class="row g-4 justify-content-center reveal">
+        <div class="col-md-10">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="d-flex align-items-start mb-4 hover-lift">
+                <i class="fas fa-check-circle text-danger mt-1 fs-4 me-3 ms-3"></i>
+                <div>
+                  <h5 class="fw-bold text-primary-dark mb-1" data-en="Experience since 2017" data-ar="خبرة منذ سنة 2017">Experience since 2017</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-start mb-4 hover-lift">
+                <i class="fas fa-check-circle text-danger mt-1 fs-4 me-3 ms-3"></i>
+                <div>
+                  <h5 class="fw-bold text-primary-dark mb-1" data-en="Direct contact with the technician" data-ar="تواصل مباشر مع التقني">Direct contact with the technician</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-start mb-4 hover-lift">
+                <i class="fas fa-check-circle text-danger mt-1 fs-4 me-3 ms-3"></i>
+                <div>
+                  <h5 class="fw-bold text-primary-dark mb-1" data-en="Clear explanation before starting" data-ar="شرح واضح قبل بدء العمل">Clear explanation before starting</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-start mb-4 hover-lift">
+                <i class="fas fa-check-circle text-danger mt-1 fs-4 me-3 ms-3"></i>
+                <div>
+                  <h5 class="fw-bold text-primary-dark mb-1" data-en="Solutions adapted to each customer" data-ar="حلول مناسبة لكل زبون">Solutions adapted to each customer</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-start mb-4 hover-lift">
+                <i class="fas fa-check-circle text-danger mt-1 fs-4 me-3 ms-3"></i>
+                <div>
+                  <h5 class="fw-bold text-primary-dark mb-1" data-en="Support after installation" data-ar="دعم بعد التركيب">Support after installation</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-start mb-4 hover-lift">
+                <i class="fas fa-check-circle text-danger mt-1 fs-4 me-3 ms-3"></i>
+                <div>
+                  <h5 class="fw-bold text-primary-dark mb-1" data-en="Service in Tangier" data-ar="الخدمة بمدينة طنجة">Service in Tangier</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-start mb-4 hover-lift">
+                <i class="fas fa-check-circle text-danger mt-1 fs-4 me-3 ms-3"></i>
+                <div>
+                  <h5 class="fw-bold text-primary-dark mb-1" data-en="Professional and careful work" data-ar="عمل احترافي ودقيق">Professional and careful work</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-0 overflow-hidden bg-primary-dark text-white">
+    <div class="container-fluid p-0">
+      <div class="row g-0">
+        <!-- Contact Info -->
+        <div class="col-lg-5 p-5 p-md-5 d-flex flex-column justify-content-center reveal">
+          <div class="ps-md-5">
+            <h2 class="fw-bold mb-4" data-en="Contact Us" data-ar="اتصل بنا">Contact Us</h2>
+            <div class="title-underline-light mb-5"></div>
+            
+            <div class="contact-info mb-5">
+              <h4 class="fw-bold mb-1">OuTaTi Electro Service</h4>
+              <p class="text-white-50 fs-5 mb-4" data-en="Othman - Technician" data-ar="عثمان - تقني">Othman - Technician</p>
+              
+              <div class="d-flex align-items-start mb-3">
+                <i class="fas fa-map-marker-alt mt-1 me-3 ms-3 text-danger fs-5"></i>
+                <p class="mb-0 fs-5" data-en="Bendiban, Tangier, Morocco" data-ar="بنديبان، طنجة، المغرب">Bendiban, Tangier, Morocco</p>
+              </div>
+            </div>
+            
+            <div class="d-flex flex-column gap-3 max-w-sm">
+              <a href="https://wa.me/212697362785" target="_blank" class="btn btn-success btn-lg rounded-pill d-flex align-items-center gap-3 justify-content-center">
+                <i class="fab fa-whatsapp fs-4"></i> <span class="fw-semibold" data-en="WhatsApp Us" data-ar="تواصل عبر واتساب">WhatsApp Us</span>
+              </a>
+              <a href="tel:+212697362785" class="btn btn-outline-light btn-lg rounded-pill d-flex align-items-center gap-3 justify-content-center">
+                <i class="fas fa-phone-alt"></i> <span class="fw-semibold" data-en="Call Now" data-ar="اتصل الآن">Call Now</span>
+              </a>
+              <div class="d-flex gap-3 mt-3">
+                <a href="https://www.instagram.com/outati_es/" target="_blank" class="btn btn-light rounded-circle shadow-sm d-flex align-items-center justify-content-center flex-grow-1 py-3" style="color: #E1306C;">
+                  <i class="fab fa-instagram fs-4"></i>
+                </a>
+                <a href="https://maps.google.com/maps?q=Bendiban,Tangier,Morocco" target="_blank" class="btn btn-light rounded-circle shadow-sm d-flex align-items-center justify-content-center flex-grow-1 py-3 text-secondary">
+                  <i class="fas fa-map-marked-alt fs-4"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Map -->
+        <div class="col-lg-7 position-relative min-vh-50 reveal" style="min-height: 500px;">
+          <iframe 
+            src="https://maps.google.com/maps?q=Bendiban,Tangier,Morocco&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+            class="position-absolute top-0 start-0 w-100 h-100 border-0" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary-darkest text-white pt-5 pb-4 border-top border-white border-opacity-10">
+    <div class="container pt-3">
+      <div class="row g-4 mb-5">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <a class="navbar-brand d-flex flex-column align-items-start mb-4 text-white text-decoration-none" href="#">
+            <span class="logo-main fw-bold fs-3">OuTaTi</span>
+            <span class="logo-sub text-white-50">Electro Service</span>
+          </a>
+          <p class="text-white-50 mb-4 pe-lg-4" data-en="Your trusted electronics and security technician in Tangier. Professional service, direct communication, and reliable solutions." data-ar="التقني الموثوق للإلكترونيات وأنظمة الحماية في طنجة. خدمة احترافية، تواصل مباشر، وحلول موثوقة.">
+            Your trusted electronics and security technician in Tangier. Professional service, direct communication, and reliable solutions.
+          </p>
+          <div class="badge border border-white border-opacity-25 rounded-pill px-3 py-2 text-white-50 fw-normal" data-en="Founded in 2017" data-ar="تأسس سنة 2017">
+            Founded in 2017
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="fw-bold mb-4" data-en="Services" data-ar="الخدمات">Services</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2 text-white-50">
+            <li><a href="#" class="text-white-50 text-decoration-none hover-text-white footer-link" data-service="camera" data-en="Camera Installation" data-ar="تركيب كاميرات المراقبة">Camera Installation</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none hover-text-white footer-link" data-service="phone" data-en="Phone Repair" data-ar="إصلاح الهواتف">Phone Repair</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none hover-text-white footer-link" data-service="network" data-en="Network & Wi-Fi" data-ar="الشبكات والواي فاي">Network & Wi-Fi</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none hover-text-white footer-link" data-service="solar" data-en="Solar Cameras" data-ar="كاميرات الطاقة الشمسية">Solar Cameras</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-4 col-md-6">
+          <h5 class="fw-bold mb-4" data-en="Connect" data-ar="تواصل">Connect</h5>
+          <ul class="list-unstyled d-flex flex-column gap-3">
+            <li>
+              <a href="https://wa.me/212697362785" target="_blank" class="text-white-50 text-decoration-none hover-text-white d-flex align-items-center gap-3">
+                <i class="fab fa-whatsapp fs-5 text-success"></i> <span style="direction: ltr">+212 600 000 000</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/outati_es/" target="_blank" class="text-white-50 text-decoration-none hover-text-white d-flex align-items-center gap-3">
+                <i class="fab fa-instagram fs-5" style="color: #E1306C;"></i> <span>@outati_es</span>
+              </a>
+            </li>
+            <li>
+              <div class="text-white-50 d-flex align-items-start gap-3 mt-2">
+                <i class="fas fa-map-marker-alt mt-1"></i> <span data-en="Bendiban, Tangier" data-ar="بنديبان، طنجة">Bendiban, Tangier</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="text-center pt-4 border-top border-white border-opacity-10 text-white-50 small">
+        <span data-en="© 2026 OuTaTi Electro Service. All rights reserved." data-ar="© 2026 OuTaTi Electro Service. جميع الحقوق محفوظة.">© 2026 OuTaTi Electro Service. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/212697362785" target="_blank" class="floating-wa text-decoration-none">
+    <div class="floating-wa-label bg-white text-dark shadow-sm rounded-pill px-3 py-1 mb-2 fw-semibold ms-auto" data-en="Talk to Othman" data-ar="تواصل مع عثمان">
+      Talk to Othman
+    </div>
+    <div class="floating-wa-btn bg-success text-white shadow-lg rounded-circle d-flex align-items-center justify-content-center">
+      <i class="fab fa-whatsapp fs-2"></i>
+    </div>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="/src/script.js"></script>
+</body>
+</html>
