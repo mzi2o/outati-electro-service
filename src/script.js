@@ -159,7 +159,7 @@ ${desc}`;
       }
 
       const encodedMessage = encodeURIComponent(message);
-      const whatsappUrl = `https://wa.me/212600000000?text=${encodedMessage}`;
+      const whatsappUrl = `https://wa.me/212697362785?text=${encodedMessage}`;
       
       window.open(whatsappUrl, '_blank');
     });
