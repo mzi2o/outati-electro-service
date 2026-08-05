@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/outati-electro-service/",
+  base: "/",
 
   server: {
     host: "0.0.0.0",
