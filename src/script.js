@@ -203,9 +203,6 @@ ${desc}`;
       }
     });
   });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
   const counters = document.querySelectorAll(".counter");
   let countersStarted = false;
 
@@ -245,3 +242,4 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", startCounters);
   startCounters();
 });
+
