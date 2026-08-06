@@ -325,7 +325,125 @@ body.rtl .about-dots {
   background: var(--primary-dark);
   color: white !important;
 }
+/* Impact Section */
+.impact-section {
+  background: #f8f9fa;
+}
 
+.section-label {
+  display: inline-block;
+  color: var(--accent-red);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+}
+
+.impact-intro {
+  max-width: 650px;
+  margin-top: 1rem;
+}
+
+.impact-card {
+  transition: var(--transition);
+  border: 1px solid rgba(0, 0, 0, 0.05) !important;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.impact-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.impact-card::after {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: rgba(13, 43, 94, 0.04);
+  right: -60px;
+  bottom: -60px;
+  transition: var(--transition);
+}
+
+.impact-card:hover::after {
+  transform: scale(1.25);
+  background: rgba(220, 38, 38, 0.06);
+}
+
+.impact-card-main {
+  min-height: 100%;
+  border: 1px solid rgba(220, 38, 38, 0.16) !important;
+}
+
+.impact-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  background: rgba(13, 43, 94, 0.05);
+  color: var(--primary-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  transition: var(--transition);
+  position: relative;
+  z-index: 1;
+}
+
+.impact-card:hover .impact-icon {
+  background: var(--primary-dark);
+  color: #fff;
+}
+
+.impact-number {
+  color: var(--accent-red);
+  font-size: clamp(3.5rem, 7vw, 6rem);
+  line-height: 1;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.impact-number-small {
+  font-size: 3rem;
+}
+
+.impact-number sup {
+  font-size: 0.35em;
+  top: -1.2em;
+  margin-left: 4px;
+}
+
+.impact-card h4,
+.impact-card h5,
+.impact-card p {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 767.98px) {
+  .impact-card-main {
+    text-align: center;
+  }
+
+  .impact-card-main .impact-icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .impact-number {
+    font-size: 4rem;
+  }
+
+  .impact-number-small {
+    font-size: 2.7rem;
+  }
+}
 /* Solar Feature */
 .solar-feature {
   background: var(--primary-dark);
@@ -342,83 +460,117 @@ body.rtl .about-dots {
   opacity: 0.5;
 }
 
-/* Timeline */
-.timeline-container {
-  max-width: 900px;
-  padding-top: 2rem;
+/* Testimonials */
+.testimonials-intro {
+  max-width: 680px;
+  margin-top: 1rem;
 }
-.timeline-line {
+
+.section-label {
+  display: inline-block;
+  color: var(--accent-red);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.05) !important;
+  transition: var(--transition);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.testimonial-card::before {
+  content: "";
   position: absolute;
-  top: 25px;
-  left: 10%;
-  right: 10%;
-  height: 2px;
-  background: rgba(13, 43, 94, 0.1);
-  z-index: 1;
-}
-.timeline-dot {
-  width: 50px;
-  height: 50px;
-  background: white;
-  border: 3px solid var(--primary-dark);
+  width: 130px;
+  height: 130px;
+  top: -65px;
+  right: -65px;
   border-radius: 50%;
-  margin: 0 auto;
+  background: rgba(13, 43, 94, 0.05);
+  transition: var(--transition);
+}
+
+.testimonial-card:hover::before {
+  transform: scale(1.2);
+  background: rgba(220, 38, 38, 0.07);
+}
+
+.quote-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
-  font-size: 1.25rem;
+  background: rgba(13, 43, 94, 0.05);
   color: var(--primary-dark);
+  font-size: 1.3rem;
   position: relative;
-  z-index: 2;
+  z-index: 1;
   transition: var(--transition);
 }
-.timeline-item:hover .timeline-dot {
+
+.testimonial-card:hover .quote-icon {
   background: var(--primary-dark);
-  color: white;
-  transform: scale(1.1);
+  color: #fff;
 }
 
-@media (max-width: 767px) {
-  .timeline-line {
-    top: 0;
-    bottom: 0;
-    left: 40px;
-    right: auto;
-    width: 2px;
-    height: 100%;
-  }
-  body.rtl .timeline-line {
-    left: auto;
-    right: 40px;
-  }
-  .timeline-item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left !important;
-    padding-left: 80px !important;
-    position: relative;
-    margin-bottom: 2rem;
-  }
-  body.rtl .timeline-item {
-    align-items: flex-end;
-    text-align: right !important;
-    padding-left: 0 !important;
-    padding-right: 80px !important;
-  }
-  .timeline-dot {
-    position: absolute;
-    left: 15px;
-    top: 0;
-    margin: 0;
-  }
-  body.rtl .timeline-dot {
-    left: auto;
-    right: 15px;
-  }
+.testimonial-stars {
+  color: #f5b301;
+  font-size: 0.9rem;
+  position: relative;
+  z-index: 1;
 }
 
+.testimonial-text {
+  line-height: 1.8;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-client {
+  position: relative;
+  z-index: 1;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.client-avatar {
+  width: 48px;
+  height: 48px;
+  margin-right: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-dark);
+  color: #fff;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+[dir="rtl"] .client-avatar {
+  margin-right: 0;
+  margin-left: 12px;
+}
+
+@media (max-width: 767.98px) {
+  .testimonial-card {
+    padding: 1.5rem !important;
+  }
+}
 /* How it Works */
 .step-circle {
   width: 80px;
@@ -546,7 +698,15 @@ body.rtl .floating-wa {
   opacity: 1;
   transform: translateY(0);
 }
-
+.footer-logo {
+  width: 102px;
+  height: 62px;
+  object-fit: contain;
+  background: transparent;
+  border-radius: 8px;
+  display: block;
+  m
+}
 @keyframes pulse {
   0% { box-shadow: 0 0 0 0 rgba(25, 135, 84, 0.5); }
   70% { box-shadow: 0 0 0 15px rgba(25, 135, 84, 0); }
